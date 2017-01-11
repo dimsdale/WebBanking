@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Entity
 @DiscriminatorValue("CreditAccount")
-public class CreditAccount {
+public class CreditAccount extends Account {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "account")
     private Set<CreditPayment> creditPayments;

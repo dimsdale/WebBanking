@@ -1,13 +1,11 @@
 package ua.sdo.model.users;
 
 import ua.sdo.annotations.Unique;
-import ua.sdo.model.accounts.Account;
 import ua.sdo.model.users.enums.UserType;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
-import java.util.Set;
 
 @Inheritance
 @Entity
