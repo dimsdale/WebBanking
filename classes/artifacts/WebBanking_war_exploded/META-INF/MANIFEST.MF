@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: WebBanking
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: dimms
+Implementation-Vendor-Id: ua.sdo
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_112
+Main-Class: ${start-class}
+
