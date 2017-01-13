@@ -7,5 +7,7 @@ import javax.persistence.Entity;
 @DiscriminatorValue("DepositAccount")
 public class DepositAccount extends Account {
 
-
+    public DepositAccount() {
+        this.percentage = 5;
+    }
 }

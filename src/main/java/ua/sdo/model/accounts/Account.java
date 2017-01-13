@@ -18,11 +18,14 @@ public abstract class Account {
     protected int id;
 
     @Column(name = "Sum", nullable = false)
-    protected double sum;
+    protected volatile double sum;
 
     @Column(name = "date_of_open")
     @Type(type = "timestamp")
     protected Date date_of_open;
+
+    @Column(name = "percentage", nullable = false)
+    protected int percentage;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "account_status")
@@ -41,6 +44,15 @@ public abstract class Account {
     protected User user;
 
     public Account() {
+
+    }
+
+    public int getPercentage() {
+        return percentage;
+    }
+
+    public void setPercentage(int percentage) {
+        this.percentage = percentage;
     }
 
     public int getId() {

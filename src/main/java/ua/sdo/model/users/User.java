@@ -47,11 +47,11 @@ public abstract class User implements Serializable {
         this.login = login;
     }
 
-    public String getName() {
+    public String getPassword() {
         return password;
     }
 
-    public void setName(String password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
